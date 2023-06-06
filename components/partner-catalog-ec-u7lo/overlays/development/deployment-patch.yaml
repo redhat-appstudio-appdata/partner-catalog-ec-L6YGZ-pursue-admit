@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog-ec-u7lo
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhn-support-csears-tenant/partner-catalog-ec/partner-catalog-ec-u7lo@sha256:6d2355099a490e2e263b00aadea4d4bfeed8eb712ef8954f4d2b6b9604029978
+        name: my-java-springboot
+        resources: {}
+status: {}
